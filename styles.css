@@ -1,4 +1,3 @@
-
 *{
     padding: 0px;
     margin: 0px;
@@ -57,15 +56,12 @@ p{
     font-size: 20px;
     list-style-type: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-menu ul a:hover{
     color: #fff;
     font-weight: bold;
-}
-
-.nav-menu ul a{
-    text-decoration: none;
 }
 
 
