@@ -1,7 +1,7 @@
 *{
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 
 body{
@@ -33,7 +33,7 @@ p{
 
 .nav-title{
     width: 30%;
-    background: red;
+    background: lightseagreen;
     padding: 16px 40px;
     text-align: center;
 }
