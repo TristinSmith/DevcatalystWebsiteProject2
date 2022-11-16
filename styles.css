@@ -21,6 +21,11 @@ p{
     padding-right: 5%;
 }
 
+.headimage{
+    height: auto;
+    width: 100%;
+}
+
 .nav{
     background: black;
     color: white;
