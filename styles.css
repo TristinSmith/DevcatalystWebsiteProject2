@@ -6,7 +6,7 @@
 
 body{
     margin: 0px;
-    font-family: Georgia, Arial, sans-serif;
+    font-family: "Trebuchet MS",Georgia, Arial, sans-serif;
     background-color: #ffffff;
 }
 
@@ -20,10 +20,20 @@ p{
     padding-left: 5%;
     padding-right: 5%;
 }
+hr{
+    width: 50%;
+    margin: auto;
+    border: 4px solid lightskyblue;
+    border-radius: 5px;
+}
 
 .headimage{
     height: auto;
     width: 100%;
+}
+
+.centralheader{
+    text-align: center;
 }
 
 .nav{
@@ -38,7 +48,7 @@ p{
 
 .nav-title{
     width: 30%;
-    background: lightseagreen;
+    background: lightblue;
     padding: 16px 40px;
     text-align: center;
 }
