@@ -15,21 +15,34 @@ h2{
     font-size: 4vw;
 }
 
-p, li{
-    font-size: 35px;
+p{
     padding-left: 5%;
     padding-right: 5%;
 }
+
 li{
     padding-left: 10%;
     padding-right: 10%;
 }
+
+p, li{
+    font-size: 35px;
+}
+
 hr{
     width: 50%;
     margin: auto;
     border: 4px solid rgb(45, 175, 255);
     border-radius: 5px;
 }
+
+.reviewStar{
+    float: left;
+    margin-right: 3%;
+    height: auto;
+    width: 7%;
+}
+
 
 .footer {
     position: sticky;
@@ -92,6 +105,9 @@ hr{
 
 
 @media screen and (max-width:850px){
+    .reviewStar{
+        width:13%;
+    }
     p, li{
         font-size:25px;
     }
