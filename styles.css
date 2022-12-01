@@ -36,6 +36,13 @@ hr{
     border-radius: 5px;
 }
 
+.otherHr{
+    width: 75%;
+    margin: auto;
+    border: 4px solid rgb(45, 175, 255);
+    border-radius: 5px;
+}
+
 
 .reviewStar{
     float: left;
@@ -62,6 +69,8 @@ hr{
 
 .centralheader{
     text-align: center;
+    font-size: 4vw;
+
 }
 
 .nav{
