@@ -80,6 +80,14 @@ hr {
   width: 8%;
 }
 
+.duck {
+  float: left;
+  margin-right: 10%;
+  margin-left: 5%;
+  height: auto;
+  width: 10%;
+}
+
 .footer {
   position: sticky;
   left: 0;
