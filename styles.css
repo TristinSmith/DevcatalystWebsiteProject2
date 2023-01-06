@@ -27,7 +27,7 @@ li {
 
 p,
 li {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 hr {
@@ -66,6 +66,7 @@ hr {
   animation-name: rotate;
   animation-duration: 1s;
 }
+
 .otherHr {
   width: 75%;
   margin: auto;
@@ -78,6 +79,7 @@ hr {
   margin-right: 3%;
   height: auto;
   width: 8%;
+  border: 5px double rgb(45, 175, 255);
 }
 
 .duck {
@@ -86,6 +88,7 @@ hr {
   margin-left: 5%;
   height: auto;
   width: 10%;
+  border: 5px double rgb(45, 175, 255);
 }
 
 .footer {
