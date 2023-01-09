@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>D³ Printing</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/cubeIcon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/cubeIcon.png" />
     <meta
       charset="UTF-8"
       name="viewport"
       content="width=device-width, initial-scale=1"
-    >
+    />
   </head>
 
   <body>
@@ -27,44 +27,59 @@
         </ul>
       </div>
     </div>
-    <img src="images/D3 Printing.png" alt="Head Image" class="headimage">
+    <img src="images/D3 Printing.png" alt="Head Image" class="headimage" />
 
-    <form action="placeholder php file">
+    <form method="post" action="order.php">
       <label for="first_name">First Name:</label><br>
       <input
         type="text"
         id="first_name"
         name="first_name"
         required="required"
-      ><br>
+      /><br><br>
       <label for="last_name">Last Name:</label><br>
       <input
         type="text"
         id="last_name"
         name="last_name"
         required="required"
-      ><br>
+      /><br><br>
+      <label for="selected_color">Select Color:</label><br>
       <input
-        type="radio"
-        id="placeholder"
-        name="selected_placeholder"
-        value="placeholder"
-      >
-      <label for="placeholder">Placeholder</label><br>
-      <input
-        type="radio"
-        id="placeholder2"
-        name="selected_placeholder"
-        value="placeholder2"
-      >
-      <label for="placeholder">Placeholder 2</label><br>
-      <label for="selected_color">Select Color:</label>
-      <input type="color" id="selected_color" name="selected_color"><br>
-      <label for="object_file">Select File:</label><br>
-      <input type="file" id="object_file" name="object_file"><br>
+        type="color"
+        id="selected_color"
+        name="selected_color"
+        required
+      /><br><br>
+      <label for="object_file">Select File (Optional):</label><br>
+      <input type="file" id="object_file" name="object_file" /><br><br>
+      <label for="quality">Choose A Material Grade:</label><br>
+      <select name="quality" id="quality">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="extreme">Extreme Detail</option>
+      </select><br><br>
+      <label for="order_notes">Order Notes (Optional):</label><br>
+      <textarea id="order_notes" name="order_notes" rows="4" cols="50">
+      </textarea
+      ><br><br>
+      <label for="order_address">Order Address:</label><br>
+      <textarea
+        id="order_notes"
+        name="order_notes"
+        rows="2"
+        cols="50"
+        required
+      ></textarea
+      ><br><br>
+      <label for="delivery_notes">Delivery Notes (Optional):</label><br>
+      <textarea id="delivery_notes" name="delivery_notes" rows="4" cols="50">
+      </textarea
+      ><br><br>
 
-      <input type="submit" value="Submit">
-      <input type="reset">
+      <input type="submit" value="Submit" />
+      <input type="reset" />
     </form>
 
     <br>
