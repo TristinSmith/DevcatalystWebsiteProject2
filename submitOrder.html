@@ -27,60 +27,76 @@
         </ul>
       </div>
     </div>
-    <img src="images/D3 Printing.png" alt="Head Image" class="headimage" />
+    <img src="images/D3 Printing.png" alt="Head Image" class="headimage">
+    
+    <div id="formDiv" style="margin-right: 10%; margin-left: 10%;">
+      <form method="post" action="order.php">
+        <label for="first_name">First Name:</label><br>
+        <input
+          type="text"
+          id="first_name"
+          name="first_name"
+          required="required"
+          placeholder="Your first name..."
+        /><br>
+        <label for="last_name">Last Name:</label><br>
+        <input
+          type="text"
+          id="last_name"
+          name="last_name"
+          required="required"
+          placeholder="Your last name..."
+        /><br>
+        <label for="selected_color">Select Color:</label><br>
+        <input
+          type="color"
+          id="selected_color"
+          name="selected_color"
+          required
+        /><br>
+        <label for="quality">Choose A Material Grade:</label><br>
+        <select name="quality" id="quality">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+          <option value="extreme">Extreme Detail</option></select
+        ><br>
+        <label for="order_notes"
+          >Provide a link to a model or a basic description:</label><br>
+        <textarea
+          id="order_notes"
+          name="order_notes"
+          rows="2"
+          cols="50"
+          required
+          placeholder="A pink duck..."
+        ></textarea
+        ><br>
+        <label for="order_address">Order Address:</label><br>
+        <textarea
+          id="order_address"
+          name="order_address"
+          rows="2"
+          cols="50"
+          required
+          placeholder="Your Address..."
+        ></textarea
+        ><br>
+        <label for="delivery_notes">Delivery Notes (Optional):</label><br>
+        <textarea
+          id="delivery_notes"
+          name="delivery_notes"
+          rows="2"
+          cols="50"
+          placeholder="Leave it on the porch, beware of the dog..."
+        ></textarea
+        ><br><br>
 
-    <form method="post" action="order.php">
-      <label for="first_name">First Name:</label><br>
-      <input
-        type="text"
-        id="first_name"
-        name="first_name"
-        required="required"
-      /><br><br>
-      <label for="last_name">Last Name:</label><br>
-      <input
-        type="text"
-        id="last_name"
-        name="last_name"
-        required="required"
-      /><br><br>
-      <label for="selected_color">Select Color:</label><br>
-      <input
-        type="color"
-        id="selected_color"
-        name="selected_color"
-        required
-      /><br><br>
-      <label for="object_file">Select File (Optional):</label><br>
-      <input type="file" id="object_file" name="object_file" /><br><br>
-      <label for="quality">Choose A Material Grade:</label><br>
-      <select name="quality" id="quality">
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-        <option value="extreme">Extreme Detail</option>
-      </select><br><br>
-      <label for="order_notes">Order Notes (Optional):</label><br>
-      <textarea id="order_notes" name="order_notes" rows="4" cols="50">
-      </textarea
-      ><br><br>
-      <label for="order_address">Order Address:</label><br>
-      <textarea
-        id="order_notes"
-        name="order_notes"
-        rows="2"
-        cols="50"
-        required
-      ></textarea
-      ><br><br>
-      <label for="delivery_notes">Delivery Notes (Optional):</label><br>
-      <textarea id="delivery_notes" name="delivery_notes" rows="4" cols="50">
-      </textarea
-      ><br><br>
+        <input type="submit" value="Submit" />
+        <input type="reset" style="width: 20%;"/>
+      </form>
+    </div>
 
-      <input type="submit" value="Submit" />
-      <input type="reset" />
-    </form>
 
     <br>
     <div class="footer">
