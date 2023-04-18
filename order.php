@@ -36,7 +36,7 @@ $order_date = date("Y/m/d");
 if (empty($first_name) or empty($last_name) or empty($order_color) or empty($quality) or empty($order_address)){
   echo "Something went wrong, one or more required values are empty or invalid";
 }else{
-  $conn = new mysqli("localhost", "cchs_tsmith", "eagles", "cchs_tsmith");
+  $conn = new mysqli(username and password withheld); #withheld for security
   if($conn->connect_error){
     die("Connection Failed : ".$conn->connect_error);
   }else{
