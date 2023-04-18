@@ -27,81 +27,85 @@
         </ul>
       </div>
     </div>
-    <img src="images/D3 Printing.png" alt="Head Image" class="headimage">
-    
-    <div id="formDiv" style="margin-right: 10%; margin-left: 10%;">
+    <img src="images/D3 Printing.png" alt="Head Image" class="headimage" />
+
+    <div id="formDiv" style="margin-right: 10%; margin-left: 10%">
       <form method="post" action="order.php">
-        <label for="first_name">First Name:</label><br>
+        <label for="first_name">First Name:</label><br />
         <input
           type="text"
           id="first_name"
           name="first_name"
           required="required"
           placeholder="Your first name..."
-        /><br>
-        <label for="last_name">Last Name:</label><br>
+          maxlength="32"
+        /><br />
+        <label for="last_name">Last Name:</label><br />
         <input
           type="text"
           id="last_name"
           name="last_name"
           required="required"
           placeholder="Your last name..."
-        /><br>
-        <label for="selected_color">Select Color:</label><br>
+          maxlength="32"
+        /><br />
+        <label for="selected_color">Desired Color:</label><br />
         <input
           type="color"
           id="selected_color"
           name="selected_color"
           required
-        /><br>
-        <label for="quality">Choose A Material Grade:</label><br>
+        /><br />
+        <label for="quality">Material Grade:</label><br />
         <select name="quality" id="quality">
           <option value="low">Low</option>
           <option value="medium">Medium</option>
           <option value="high">High</option>
           <option value="extreme">Extreme Detail</option></select
-        ><br>
+        ><br />
         <label for="order_notes"
-          >Provide a link to a model or a basic description:</label><br>
+          >Give us a description of your order:</label
+        ><br />
         <textarea
           id="order_notes"
           name="order_notes"
           rows="2"
           cols="50"
           required
-          placeholder="A pink duck..."
+          placeholder="A duck with a tophat..."
+          maxlength="256"
         ></textarea
-        ><br>
-        <label for="order_address">Order Address:</label><br>
+        ><br />
+        <label for="order_address">Order Address:</label><br />
         <textarea
           id="order_address"
           name="order_address"
           rows="2"
           cols="50"
           required
-          placeholder="Your Address..."
+          placeholder="308 Negra Arroyo Lane, Albuquerque, NM..."
+          maxlength="256"
         ></textarea
-        ><br>
-        <label for="delivery_notes">Delivery Notes (Optional):</label><br>
+        ><br />
+        <label for="delivery_notes">Any Notes For Delivery (Optional):</label><br />
         <textarea
           id="delivery_notes"
           name="delivery_notes"
           rows="2"
           cols="50"
           placeholder="Leave it on the porch, beware of the dog..."
+          maxlength="256"
         ></textarea
-        ><br><br>
+        ><br /><br />
 
         <input type="submit" value="Submit" />
-        <input type="reset" style="width: 20%;"/>
+        <input type="reset" style="width: 20%" />
       </form>
     </div>
-
-
-    <br>
+    <br />
     <div class="footer">
       <strong>For customer service, please call (340)-555-5555</strong>
-      <br>
+      <br />
       <strong
         >For email services, please contact us at D3Printing@gmail.com</strong
       >

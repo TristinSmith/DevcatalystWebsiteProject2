@@ -4,15 +4,36 @@
   margin: 0px;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0px;
   font-family: "Trebuchet MS", Georgia, Arial, sans-serif;
   background-color: #ffffff;
+  animation: fadeInAnimation ease 2s;
+  animation-fill-mode: forwards;
 }
 
 h2 {
   text-align: center;
   font-size: 4vw;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
 }
 
 p {
@@ -56,7 +77,8 @@ hr {
   }
 }
 textarea,
-input[type=text], select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -65,8 +87,8 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type=reset],
-input[type=submit] {
+input[type="reset"],
+input[type="submit"] {
   width: 100%;
   background-color: rgb(45, 175, 255);
   color: white;
@@ -76,8 +98,8 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-input[type=reset]:hover,
-input[type=submit]:hover {
+input[type="reset"]:hover,
+input[type="submit"]:hover {
   background-color: rgb(0, 157, 255);
 }
 
@@ -87,6 +109,26 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+#slideshowDiv {
+  border-radius: 10px;
+  background-color: rgb(45, 175, 255);
+  padding: 15px;
+}
+
+.reviewDiv {
+  border-left: 8px solid rgb(0, 157, 255);
+  background-image: linear-gradient(to right, rgb(112, 200, 255), white);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutDiv {
+  background-color: rgb(156, 217, 255);
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px solid rgb(68, 183, 255);
+  border-radius: 40px;
+}
 .dropdown {
   position: relative;
   animation-name: dropdown;
@@ -198,7 +240,6 @@ input[type=submit]:hover {
   height: auto;
 }
 
-/* Caption text */
 .text {
   color: #000000;
   font-size: 30px;
@@ -216,9 +257,9 @@ input[type=submit]:hover {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background-color: rgb(45, 175, 255);
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -280,7 +321,6 @@ input[type=submit]:hover {
     font-size: 16px;
   }
 }
-/*slideshow media query*/
 @media only screen and (max-width: 300px) {
   .text {
     font-size: 12px;
