@@ -290,7 +290,7 @@ input[type="submit"]:hover {
 }
 
 /*media query*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1300px) {
   .slideshow-container {
     width: 80%;
   }
